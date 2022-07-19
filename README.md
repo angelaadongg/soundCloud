@@ -89,7 +89,7 @@ information.
 
 * Require Authentication: false
 * Request
-  * Method: Post
+  * Method: POST
   * URL: /login
   * Headers:
     * Content-Type: application/json
@@ -157,7 +157,7 @@ user's information.
 * Require Authentication: false
 * Request
   * Method: POST
-  * URL: /users/new
+  * URL: /newUsers
   * Headers:
     * Content-Type: application/json
   * Body:
@@ -281,7 +281,7 @@ Returns all the songs created by the current user.
 * Require Authentication: true
 * Request
   * Method: GET
-  * URL: /songs/:userId
+  * URL: /:userId/songs
   * Body: none
 
 * Successful Response
