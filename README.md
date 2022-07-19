@@ -51,7 +51,7 @@ Returns the information about the current user that is logged in.
 * Require Authentication: true
 * Request
   * Method: GET
-  * URL: /user
+  * URL: /user/:userId
   * Body: none
 
 * Successful Response
@@ -69,6 +69,18 @@ Returns the information about the current user that is logged in.
       "username": "JohnSmith"
     }
     ```
+ * Error Response: Couldn't find a User with the specified Id
+  * Status Code: 404
+  * Headers:
+    * Content-Type: application/json
+  * Body:
+
+    ```json
+    {
+      "message": "User couldn't be found",
+      "statusCode": 404
+    }
+    ```
 
 ## Log In a User
 
@@ -77,8 +89,8 @@ information.
 
 * Require Authentication: false
 * Request
-  * Method: ?
-  * URL: ?
+  * Method: Post
+  * URL: /login
   * Headers:
     * Content-Type: application/json
   * Body:
