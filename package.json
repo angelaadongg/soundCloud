@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/angelaadongg/soundCloud/issues"
   },
-  "homepage": "https://github.com/angelaadongg/soundCloud#readme"
+  "homepage": "https://github.com/angelaadongg/soundCloud#readme",
+  "dependencies": {
+    
+  }
 }
